@@ -1,0 +1,56 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  margin-top: 3%;
+}
+
+.tab-list {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+.cs-items {
+  margin: 20px 0px 0px 20px;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 100px 300px;
+}
+.cs-items img {
+  display: inline-block;
+  width: 100%;
+}
+.icon-cs {
+  display: inline-block;
+}
+.buttons button {
+  margin: 0px 0px 0px 5px;
+}
+.tab-list {
+  margin: 5px;
+  padding-top: 20px;
+}
+.sort-div i {
+  font-size: 25px;
+}
+
+.modal-content {
+  height: 1000px;
+}
+
+.modal-90w {
+  width: 90% !important;
+  max-width: 1000px !important;
+}
+
+.commonButton {
+  display: inline;
+  padding: 30px;
+}
+
+.sort-div {
+  display: inline;
+}
+.form-check {
+  display: inline !important;
+  margin-left: 10px;
+}
