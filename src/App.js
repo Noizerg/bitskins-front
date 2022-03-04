@@ -3,6 +3,7 @@ import './styles/bitskins.css';
 import NavBar from './components/navBar';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import CS from './components/cs';
+import main from './components/main';
 import React, { useEffect, useState } from 'react';
 import LoginForm from './components/login';
 import Register from './components/register';
@@ -29,7 +30,7 @@ function App() {
       <NavBar user={user} balance={balance} />
       <main className="container">
         <Switch>
-          <ProtectedRoute path="/cs" component={CS} />
+          <ProtectedRoute path="/cs" component={main} />
         </Switch>
         <Switch>
           <Route path="/login" component={LoginForm} />
