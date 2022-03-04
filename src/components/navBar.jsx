@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import Balance from './balance';
 
 class NavBar extends Component {
   state = {};
@@ -54,6 +55,7 @@ class NavBar extends Component {
                       LogOut
                     </NavLink>
                   </li>
+                  <span class="navbar-text">Balance: {this.props.balance}</span>
                 </React.Fragment>
               )}
             </ul>

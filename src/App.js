@@ -8,16 +8,25 @@ import LoginForm from './components/login';
 import Register from './components/register';
 import ProtectedRoute from './components/common/propectedRoute';
 import Auth from './services/authService';
+import getAccountBalance from './services/bitskinsApi';
 
 function App() {
   const [user, setUser] = useState({});
+  const [balance, setBalance] = useState('');
   useEffect(() => {
     const user = Auth.getCurrentUser();
     setUser({ user });
+
+    const getBalance = async () => {
+      let balance = await getAccountBalance();
+      setBalance(balance.available_balance);
+    };
+    getBalance();
   }, []);
+
   return (
     <React.Fragment>
-      <NavBar user={user} />
+      <NavBar user={user} balance={balance} />
       <main className="container">
         <Switch>
           <ProtectedRoute path="/cs" component={CS} />
