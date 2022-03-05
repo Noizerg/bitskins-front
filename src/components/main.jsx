@@ -4,13 +4,15 @@ import ItemOnSale from './itemsOnSale';
 
 const main = () => {
   return (
-    <div className="main">
-      <div className="cs-items">
-        <CS />
-      </div>
-      <div className="items-on-sale">
-        {' '}
-        <ItemOnSale />
+    <div className="main container">
+      <div className="row">
+        <div className="cs-items col-sm">
+          <CS />
+        </div>
+        <div className="items-on-sale col-sm">
+          {' '}
+          <ItemOnSale />
+        </div>
       </div>
     </div>
   );

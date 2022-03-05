@@ -5,7 +5,6 @@
 }
 
 .tab-list {
-  position: absolute;
   left: 10%;
   top: 10%;
 }
@@ -53,4 +52,26 @@
 .form-check {
   display: inline !important;
   margin-left: 10px;
+}
+
+.container {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.stickers {
+  width: 300px;
+  display: flex;
+}
+
+.items-on-sale .cs-items {
+  display: block;
+}
+
+.on-sale {
+  padding-top: 50px;
+}
+
+.item-stats .icon-cs img {
+  width: 200px;
 }
